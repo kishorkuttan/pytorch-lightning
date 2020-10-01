@@ -16,8 +16,8 @@ import os
 import torch
 import torch.multiprocessing as mp
 
-from pytorch_lightning.utilities.distributed import find_free_network_port
 from pytorch_lightning.accelerators.ddp_base_backend import DDPBase
+from pytorch_lightning.utilities.distributed import find_free_network_port
 
 
 class DDPSpawnBackend(DDPBase):

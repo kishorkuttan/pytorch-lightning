@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import numbers
 from abc import ABC, abstractmethod
 from typing import Any, Mapping, Optional, Sequence
-import numbers
 
+import numpy as np
 import torch
 from torch import nn
-import numpy as np
 
 from pytorch_lightning.metrics.converters import (
     at_least_1d,

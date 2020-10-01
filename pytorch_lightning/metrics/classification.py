@@ -23,8 +23,6 @@ from pytorch_lightning.metrics.functional.classification import (
     confusion_matrix,
     _confmat_normalize,
     dice_score,
-    f1_score,
-    fbeta_score,
     iou,
     multiclass_precision_recall_curve,
     multiclass_roc,

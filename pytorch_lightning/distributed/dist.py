@@ -1,6 +1,7 @@
 import io
-import torch
 from typing import Any
+
+import torch
 from torch import distributed as torch_distrib
 
 

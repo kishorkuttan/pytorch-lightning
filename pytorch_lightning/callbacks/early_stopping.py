@@ -25,7 +25,6 @@ import torch
 from pytorch_lightning import _logger as log
 from pytorch_lightning.callbacks.base import Callback
 from pytorch_lightning.utilities import rank_zero_warn
-import os
 
 torch_inf = torch.tensor(np.Inf)
 

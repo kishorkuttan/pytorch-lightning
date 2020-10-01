@@ -18,7 +18,6 @@ conversion to/from :class:`numpy.ndarray` and :class:`torch.Tensor` as well as u
 sync tensors between different processes in a DDP scenario, when needed.
 """
 
-from functools import reduce
 import numbers
 from typing import Any, Callable, Optional, Union
 

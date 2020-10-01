@@ -1,13 +1,14 @@
-from pytorch_lightning import accelerators
 import os
+
 import torch
 
+from pytorch_lightning import _logger as log
+from pytorch_lightning import accelerators
 from pytorch_lightning.accelerators.base_backend import BackendType
 from pytorch_lightning.utilities import device_parser
 from pytorch_lightning.utilities import rank_zero_only
 from pytorch_lightning.utilities.distributed import rank_zero_warn, rank_zero_info
 from pytorch_lightning.utilities.exceptions import MisconfigurationException
-from pytorch_lightning import _logger as log
 
 try:
     import torch_xla

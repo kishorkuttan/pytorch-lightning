@@ -22,8 +22,8 @@ from typing import Optional
 import numpy as np
 import torch
 
-from pytorch_lightning.utilities.distributed import find_free_network_port
 from pytorch_lightning.accelerators.ddp_base_backend import DDPBase
+from pytorch_lightning.utilities.distributed import find_free_network_port
 
 try:
     from hydra.utils import to_absolute_path, get_original_cwd

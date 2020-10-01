@@ -1,4 +1,5 @@
 import os
+
 from pytorch_lightning.callbacks import ModelCheckpoint, EarlyStopping, ProgressBarBase, ProgressBar
 from pytorch_lightning.utilities.exceptions import MisconfigurationException
 

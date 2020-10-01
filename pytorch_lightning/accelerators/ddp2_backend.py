@@ -16,9 +16,9 @@ import os
 
 import torch
 
-from pytorch_lightning.utilities.exceptions import MisconfigurationException
-from pytorch_lightning.core.step_result import Result
 from pytorch_lightning.accelerators.ddp_base_backend import DDPBase
+from pytorch_lightning.core.step_result import Result
+from pytorch_lightning.utilities.exceptions import MisconfigurationException
 
 try:
     from hydra.utils import to_absolute_path, get_original_cwd

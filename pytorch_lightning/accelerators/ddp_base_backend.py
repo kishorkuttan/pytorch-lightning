@@ -15,16 +15,16 @@ import os
 import re
 
 import torch
-import torch.distributed as torch_distrib
 import torch.distributed as dist
+import torch.distributed as torch_distrib
 
 from pytorch_lightning import _logger as log
 from pytorch_lightning.accelerators.base_backend import Accelerator, BackendType
+from pytorch_lightning.distributed.dist import LightningDistributed
 from pytorch_lightning.utilities import AMPType
 from pytorch_lightning.utilities.cloud_io import atomic_save
 from pytorch_lightning.utilities.distributed import rank_zero_only, rank_zero_warn
 from pytorch_lightning.utilities.seed import seed_everything
-from pytorch_lightning.distributed.dist import LightningDistributed
 
 try:
     from hydra.core.hydra_config import HydraConfig

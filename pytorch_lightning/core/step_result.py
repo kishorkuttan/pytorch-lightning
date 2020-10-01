@@ -13,12 +13,12 @@
 # limitations under the License.
 
 import numbers
+import os
 from copy import copy
 from typing import Optional, Dict, Union, Sequence, Callable, MutableMapping, Any, List, Tuple
 
 import torch
 from torch import Tensor
-import os
 
 from pytorch_lightning.metrics.converters import sync_ddp_if_available
 
