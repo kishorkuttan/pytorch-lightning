@@ -1,5 +1,5 @@
 from unittest import mock
-import torch
+
 import pytest
 
 dp_16_args = """
