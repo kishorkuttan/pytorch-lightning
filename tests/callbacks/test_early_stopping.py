@@ -1,5 +1,4 @@
 import os
-from copy import deepcopy
 import pickle
 
 import cloudpickle
@@ -8,8 +7,8 @@ import torch
 
 from pytorch_lightning import Trainer
 from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint
-from tests.base import EvalModelTemplate
 from pytorch_lightning.utilities.exceptions import MisconfigurationException
+from tests.base import EvalModelTemplate
 
 
 class EarlyStoppingTestRestore(EarlyStopping):

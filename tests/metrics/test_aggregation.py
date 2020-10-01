@@ -1,60 +1,41 @@
-import pytest
+import math
 import sys
 from collections import namedtuple
 from functools import partial
-import math
 
+import numpy as np
+import pytest
 import torch
 import torch.distributed as dist
 import torch.multiprocessing as mp
-import numpy as np
-
-from tests.base import EvalModelTemplate
-from pytorch_lightning import Trainer
-import tests.base.develop_utils as tutils
-from pytorch_lightning.metrics import (
-    Accuracy,
-    ConfusionMatrix,
-    PrecisionRecallCurve,
-    Precision,
-    Recall,
-    AveragePrecision,
-    AUROC,
-    FBeta,
-    F1,
-    ROC,
-    MulticlassROC,
-    MulticlassPrecisionRecallCurve,
-    DiceCoefficient,
-    IoU,
-    MAE,
-    MSE,
-    RMSE,
-    RMSLE,
-    PSNR,
-    SSIM,
+from skimage.metrics import (
+    peak_signal_noise_ratio
 )
-
 from sklearn.metrics import (
     accuracy_score,
     confusion_matrix,
-    precision_recall_curve,
     precision_score,
     recall_score,
-    average_precision_score,
-    roc_auc_score,
     fbeta_score,
     f1_score,
-    roc_curve,
-    jaccard_score,
     mean_squared_error,
     mean_absolute_error,
     mean_squared_log_error
 )
 
-from skimage.metrics import (
-    peak_signal_noise_ratio,
-    structural_similarity
+import tests.base.develop_utils as tutils
+from pytorch_lightning.metrics import (
+    Accuracy,
+    ConfusionMatrix,
+    Precision,
+    Recall,
+    FBeta,
+    F1,
+    MAE,
+    MSE,
+    RMSE,
+    RMSLE,
+    PSNR,
 )
 
 # example structure

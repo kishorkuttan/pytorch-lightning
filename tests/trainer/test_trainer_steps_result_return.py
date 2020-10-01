@@ -9,9 +9,9 @@ import torch
 from pytorch_lightning import Trainer
 from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint
 from pytorch_lightning.core.step_result import TrainResult
+from pytorch_lightning.utilities.exceptions import MisconfigurationException
 from tests.base import EvalModelTemplate
 from tests.base.deterministic_model import DeterministicModel
-from pytorch_lightning.utilities.exceptions import MisconfigurationException
 
 
 # test with train_step_end

@@ -1,4 +1,5 @@
 import os
+
 from pytorch_lightning import Trainer, seed_everything
 from tests.base import EvalModelTemplate
 

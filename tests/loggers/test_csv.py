@@ -1,8 +1,8 @@
+import os
 from argparse import Namespace
 
 import pytest
 import torch
-import os
 
 from pytorch_lightning.core.saving import load_hparams_from_yaml
 from pytorch_lightning.loggers import CSVLogger

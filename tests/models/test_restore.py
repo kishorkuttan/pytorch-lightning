@@ -2,7 +2,6 @@ import glob
 import logging as log
 import os
 import pickle
-import functools
 
 import cloudpickle
 import pytest

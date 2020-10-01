@@ -1,6 +1,8 @@
+import os
+
 import pytest
 import torch
-import os
+
 from tests.backends import ddp_model
 from tests.utilities.dist import call_training_script
 

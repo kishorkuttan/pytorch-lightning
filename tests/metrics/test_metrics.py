@@ -1,13 +1,14 @@
 import os
 from typing import Any
+
 import numpy as np
 import pytest
 import torch
 
 import tests.base.develop_utils as tutils
-from tests.base import EvalModelTemplate
-from pytorch_lightning.metrics.metric import Metric, TensorMetric, NumpyMetric
 from pytorch_lightning import Trainer
+from pytorch_lightning.metrics.metric import Metric, TensorMetric, NumpyMetric
+from tests.base import EvalModelTemplate
 
 
 class DummyTensorMetric(TensorMetric):

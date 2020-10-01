@@ -1,11 +1,13 @@
 """
 Tests to ensure that the training loop works with a dict (1.0)
 """
+import os
+
+import pytest
+import torch
+
 from pytorch_lightning import Trainer
 from tests.base.deterministic_model import DeterministicModel
-import os
-import torch
-import pytest
 
 
 def test__eval_step__flow(tmpdir):

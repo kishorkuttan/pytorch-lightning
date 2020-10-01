@@ -1,8 +1,8 @@
 import os
 import subprocess
-from subprocess import TimeoutExpired
 import sys
 from pathlib import Path
+from subprocess import TimeoutExpired
 
 import pytorch_lightning
 

@@ -6,11 +6,11 @@ import pytest
 import torch
 
 from pytorch_lightning import LightningDataModule, Trainer, seed_everything
+from pytorch_lightning.accelerators.gpu_backend import GPUBackend
+from pytorch_lightning.utilities.model_utils import is_overridden
 from tests.base import EvalModelTemplate
 from tests.base.datamodules import TrialMNISTDataModule
 from tests.base.develop_utils import reset_seed
-from pytorch_lightning.utilities.model_utils import is_overridden
-from pytorch_lightning.accelerators.gpu_backend import GPUBackend
 
 
 def test_can_prepare_data(tmpdir):

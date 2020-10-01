@@ -1,6 +1,6 @@
-import pytest
 import os
 
+import pytest
 import torch
 
 from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint

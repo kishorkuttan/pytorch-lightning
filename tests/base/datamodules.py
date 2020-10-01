@@ -1,10 +1,10 @@
-import os
 from typing import Any, Dict, Optional
+
+from torch.utils.data import DataLoader, random_split
+from torch.utils.data.distributed import DistributedSampler
 
 from pytorch_lightning.core.datamodule import LightningDataModule
 from tests.base.datasets import MNIST, TrialMNIST
-from torch.utils.data import DataLoader, random_split
-from torch.utils.data.distributed import DistributedSampler
 
 
 class TrialMNISTDataModule(LightningDataModule):

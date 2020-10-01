@@ -1,5 +1,3 @@
-import pytest
-
 from pytorch_lightning.utilities.parsing import lightning_getattr, lightning_hasattr, lightning_setattr
 
 

@@ -5,10 +5,10 @@ import pytest
 import torch
 import torch.distributed as dist
 import torch.multiprocessing as mp
+
+import tests.base.develop_utils as tutils
 from pytorch_lightning import Trainer, seed_everything
 from pytorch_lightning.core.step_result import Result, TrainResult, EvalResult
-import tests.base.develop_utils as tutils
-
 from tests.base import EvalModelTemplate
 from tests.base.datamodules import TrialMNISTDataModule
 
