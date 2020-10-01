@@ -35,6 +35,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 - Added support for datamodule in learning rate finder ([#3425](https://github.com/PyTorchLightning/pytorch-lightning/pull/3425))
 
+- Added gradient clip test for native AMP ([#3754](https://github.com/PyTorchLightning/pytorch-lightning/pull/3754))
+
+- Added dist lib to enable syncing anything across devices ([#3762](https://github.com/PyTorchLightning/pytorch-lightning/pull/3762))
+
 ### Changed
 
 - Refactored accelerator backends:
@@ -138,6 +142,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
    * enable tracking original metric when step and epoch are both true ([#3685](https://github.com/PyTorchLightning/pytorch-lightning/pull/3685))
    * deprecated results obj, added support for simpler comms ([#3681](https://github.com/PyTorchLightning/pytorch-lightning/pull/3681))
    * move backends back to individual files ([#3712](https://github.com/PyTorchLightning/pytorch-lightning/pull/3712))
+   * fixes logging for eval steps ([#3763](https://github.com/PyTorchLightning/pytorch-lightning/pull/3763))
+   * decoupled DDP, DDP spawn ([#3733](https://github.com/PyTorchLightning/pytorch-lightning/pull/3733),
+        [#3766](https://github.com/PyTorchLightning/pytorch-lightning/pull/3766),
+        [#3767](https://github.com/PyTorchLightning/pytorch-lightning/pull/3767),
+        [#3774](https://github.com/PyTorchLightning/pytorch-lightning/pull/3774))
 
 - Renaming of precision recall metric ([#3308](https://github.com/PyTorchLightning/pytorch-lightning/pull/3308))
 
@@ -166,6 +175,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Allow `ModelCheckpoint` monitor to be `None` ([#3633](https://github.com/PyTorchLightning/pytorch-lightning/pull/3633))
 
 - Enable `None` model checkpoint default ([#3669](https://github.com/PyTorchLightning/pytorch-lightning/pull/3669))
+
+- Skipped `best_model_path` if `checkpoint_callback` is `None` ([#2962](https://github.com/PyTorchLightning/pytorch-lightning/pull/2962))
+
+- Used `raise .. from ..` to explicitly chain exceptions ([#3750](https://github.com/PyTorchLightning/pytorch-lightning/pull/3750))
 
 ### Deprecated
 
